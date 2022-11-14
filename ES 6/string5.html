@@ -1,0 +1,25 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="in1">
+    <button onclick="Big()">Upper Case Test</button>
+    <button onclick="Low()">Lower Case Test</button>
+    <h3 id="demo5"></h3>
+    <script>
+    function Big(){
+        let i=document.getElementById("in1").value;
+        document.getElementById("demo5").innerHTML=i.toUpperCase();
+    }
+    function Low(){
+        let x=document.getElementById("in1").value;
+        document.getElementById("demo5").innerHTML=x.toLowerCase();
+    }
+    </script>
+</body>
+</html>
