@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>Merhaba</span>
+    <h1>Dunya</h1>
+    <h1>Javascript Dunyasi</h1>
+    <p>Salesforce</p>
+    <p>Apex Programlama</p>
+    <button onclick="TagN()">Degistir</button>
+
+   <script>
+    function TagN(){
+        let n=document.getElementsByTagName("h1")
+        n[1].style.color="green";
+        n[1].innerHTML="Deneme Durumu";
+        n[0].innerHTML="World";
+
+        let y=document.getElementsByTagName("span");
+        y[0].style.background="blue";
+        
+
+    }
+   </script>
+</body>
+</html>
