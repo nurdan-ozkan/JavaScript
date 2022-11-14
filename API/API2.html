@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="a1"></h1>
+    <p id="a2"></p>
+    <span id="a3"></span>
+    <button onclick="Getir2()">Bilgileri Getir</button>
+    <script>
+        function Getir2(){
+            fetch('https://jsonplaceholder.typicode.com/posts/2')
+            .then(response=>response.json())
+            .then(y=>{
+                document.getElementById("a1").innerHTML=y.id;
+                document.getElementById("a2").innerHTML=y.title;
+                document.getElementById("a3").innerHTML=y.body;
+            })
+        }
+    </script>
+</body>
+</html>
