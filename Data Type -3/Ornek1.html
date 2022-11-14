@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="b">Merhaba Yeni Gun</h1>
+    <h1 id="f">Javascript Dersi </h1>
+    <h1 id="c"></h1>
+    <button onclick="Yz()">yaziyi degistir</button>
+    <button onclick="Rn()">Renk degistir</button>
+    <button onclick="Hs()">Hesapla</button>
+
+    <script>
+        function Hs(){
+            document.getElementById("c").innerHTML=9*3*2;
+        }
+        function Yz(){
+            document.getElementById("b").innerHTML="Hello new day";
+        }
+        function Rn(){
+            document.getElementById("f").style.color="pink";
+        }
+    </script>
+</body>
+</html>
